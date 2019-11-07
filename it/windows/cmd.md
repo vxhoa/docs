@@ -1,6 +1,16 @@
 # Windows CMD
 ## Common Windows commands
-### File operations
+### System
+* Get all computer information
+``systeminfo``
+* List all started Windows Service
+``Net Start``
+
+### IO operations
+* List directory content
+``dir``
+* Create hierachical tree for folder structure
+``tree``
 * Removing the whole folder quickly
 ```
 Rmdir [FOLDER_PATH] /S /Q
@@ -12,6 +22,14 @@ Rmdir [FOLDER_PATH] /S /Q
    ```
    Robocopy C:\EmptyFolder [FOLDER TO BE DELETED] /purge
    ```
+
+### Networking
+```
+Net Use [DISK_LETTER]: \\[NETWORK_PATH] /user:[USERNAME] [PASSWORD] /P:Yes
+```
+
 ### Monitoring
 * Removing the whole folder quickly
 * tasklist
+
+### Others
